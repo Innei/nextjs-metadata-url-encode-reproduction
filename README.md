@@ -1,4 +1,4 @@
-Next.js metadata url will encodeURLComponent unexpected.
+Next.js metadata url will encodeURLComponent unexpectedly.
 
 
 ```ts
