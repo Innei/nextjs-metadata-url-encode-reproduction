@@ -22,7 +22,6 @@ const getOgUrl = (title: string, subtitle: string) => {
 const fontNormal = fetch(
   new URL('./MYuppy-Bold-DDC.ttf', import.meta.url),
 ).then((res) => res.arrayBuffer())
-export const runtime = 'edge'
 
 export const revalidate = 60 * 60 * 24 // 24 hours
 export const GET = async (req: NextRequest) => {
