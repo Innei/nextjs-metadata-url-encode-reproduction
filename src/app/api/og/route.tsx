@@ -12,7 +12,7 @@ const getHost = () => {
 }
 const isDev = process.env.NODE_ENV === 'development'
 
-export const getOgUrl = (title: string, subtitle: string) => {
+const getOgUrl = (title: string, subtitle: string) => {
   const ogUrl = new URL(`${isDev ? 'http' : 'https'}://${getHost()}/api/og`)
   ogUrl.searchParams.set('title', title)
   ogUrl.searchParams.set('subtitle', subtitle)
